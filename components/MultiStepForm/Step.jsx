@@ -1,12 +1,11 @@
 'use client'
 
 import React from 'react'
-import { useSelector } from "react-redux"
 
-export default function Step() {
+export default function Step({ step }) {
 
-  const { number, title } = Step
-  const currentStep = useSelector((store) => store.onboarding.currentStep)
+  const { number, title } = step
+  const currentStep = 1
   return (
     <>
       <div className="flex flex-col md:flex-row items-center gap-3">
@@ -19,7 +18,7 @@ export default function Step() {
           <h4 className='text-slate-200 text-sm uppercase'>
             Step {number}
           </h4>
-          <h3 className='uppercase text-sm text-white font-bold'>
+          <h3 className='uppercase text-sm  font-bold text-blue-300'>
             {title}
           </h3>
         </div>
