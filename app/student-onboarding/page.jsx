@@ -19,7 +19,7 @@ export default function StudentOnboardingPage  () {
         },
         {
             number: 4,
-            title: "Programming Langages"
+            title: "Preffered Programming Languages"
         },
         {
             number: 5,
